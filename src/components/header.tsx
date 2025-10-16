@@ -21,12 +21,12 @@ export function Header() {
             >
               About
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('projects')}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Projects
-            </button>
+            </button> */}
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -44,12 +44,12 @@ export function Header() {
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Pieter-OHearn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/pieter-o-hearn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-4 w-4" />
               </a>
             </Button>

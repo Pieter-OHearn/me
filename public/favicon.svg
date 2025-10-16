@@ -1,0 +1,11 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="32" cy="32" r="24"
+          fill="#009689" fill-opacity="0.18"
+          stroke="#009689" stroke-width="2.5"/>
+
+  <text x="32" y="32"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-size="32" font-weight="400"
+        fill="#009689" text-anchor="middle"
+        dominant-baseline="central">P</text>
+</svg>

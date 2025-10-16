@@ -15,10 +15,16 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Handle for submit
-    // Reset form
+    const { name, email, message } = formData
+
+    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`)
+    const body = encodeURIComponent(
+      `Hi Pieter,\n\n${message}\n\nFrom: ${name}`
+    )
+
+    window.location.href = `mailto:pieter.ohearn@gmail.com?subject=${subject}&body=${body}`
+
     setFormData({ name: '', email: '', message: '' })
-    alert('Thanks for your message! I\'ll get back to you soon.')
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
