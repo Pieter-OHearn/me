@@ -1,0 +1,375 @@
+{
+  "header": {
+    "logo": "Pieter OHearn",
+    "nav": {
+      "about": "À propos",
+      "projects": "Projets",
+      "contact": "Contact"
+    },
+    "ariaLabels": {
+      "email": "E-mail",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "themeToggle": "Changer de thème",
+      "language": "Choisir la langue"
+    },
+    "socialLinks": [
+      {
+        "type": "email",
+        "href": "mailto:pieter.ohearn@gmail.com"
+      },
+      {
+        "type": "github",
+        "href": "https://github.com/pieter-ohearn"
+      },
+      {
+        "type": "linkedin",
+        "href": "https://linkedin.com/in/pieter-ohearn"
+      }
+    ]
+  },
+  "hero": {
+    "availabilityBadge": "Disponible pour de nouvelles opportunités",
+    "name": "Pieter O'Hearn",
+    "title": "Senior Full-Stack Software Engineer",
+    "tagline": "Je conçois des produits fiables de bout en bout, des API soignées aux interfaces raffinées. Passionné par la création de solutions évolutives que les utilisateurs apprécient.",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Spring",
+      "AWS",
+      "PostgreSQL",
+      "Docker",
+      "Identité numérique"
+    ]
+  },
+  "about": {
+    "title": "À propos de moi",
+    "intro": "Fort de plus de 5 ans d'expérience, je me spécialise dans la création d'applications web évolutives et dans la conduite d'initiatives techniques qui stimulent la croissance. J’ai le goût du code propre, de l’expérience utilisateur et du mentorat de la prochaine génération de développeurs.",
+    "skillsTitle": "Compétences techniques",
+    "skills": {
+      "Frontend": [
+        "TypeScript",
+        "React",
+        "React Native",
+        "Angular",
+        "Ionic"
+      ],
+      "Backend": [
+        "Java",
+        "Spring Boot",
+        "Node.js",
+        "Kotlin",
+        "Microservices"
+      ],
+      "Bases de données": [
+        "MongoDB",
+        "SQL",
+        "Redis",
+        "DynamoDB"
+      ],
+      "Cloud & DevOps": [
+        "AWS",
+        "CI/CD",
+        "Docker",
+        "OpenTelemetry"
+      ],
+      "Outils & autres": [
+        "Identité numérique",
+        "Identifiants vérifiables",
+        "OAuth2 / OpenID Connect",
+        "WCAG 2.2 AA"
+      ]
+    },
+    "educationTitle": "Formations & certifications",
+    "education": [
+      {
+        "title": "Bachelor of Science, Informatique",
+        "institution": "University of Sydney, Australie",
+        "period": "2016 - 2022"
+      },
+      {
+        "title": "Bachelor of Engineering Honours, Software Engineering",
+        "institution": "University of Sydney, Australie",
+        "period": "2017 - 2022"
+      }
+    ],
+    "experienceTitle": "Expérience professionnelle",
+    "experience": [
+      {
+        "title": "Senior Full-Stack Engineer",
+        "company": "Datakeeper",
+        "period": "2024 - présent",
+        "location": "Utrecht, Pays-Bas",
+        "highlights": [
+          "Concevoir et maintenir des frameworks applicatifs natifs, des SDK et des systèmes backend pour une plateforme de portefeuille d'identité numérique.",
+          "Créer des solutions évolutives et sûres garantissant une intégration transparente entre les applications mobiles Angular et les services backend.",
+          "Assurer des normes élevées de confidentialité et de sécurité, et offrir une expérience d'identité fiable centrée sur l'utilisateur."
+        ]
+      },
+      {
+        "title": "Senior Full-Stack Engineer",
+        "company": "Service NSW",
+        "period": "2023 - 2024",
+        "location": "Sydney, Australie",
+        "highlights": [
+          "Dirigé le développement mobile de l'application Service NSW, utilisée par plus de 4 millions d'utilisateurs sur iOS et Android.",
+          "Livré de nouvelles fonctionnalités, dont une messagerie gouvernementale numérique et des parcours transactionnels natifs fluides.",
+          "Maintenu des standards de sécurité et de confidentialité élevés tout en respectant les directives d'accessibilité WCAG 2.1."
+        ]
+      },
+      {
+        "title": "Full-Stack Developer",
+        "company": "Service NSW",
+        "period": "2022 - 2023",
+        "location": "Sydney, Australie",
+        "highlights": [
+          "Conçu une stratégie de migration progressive pour une transition fluide et maîtrisée vers les microservices.",
+          "Mis en place l’observabilité et le monitoring, réduisant les incidents et améliorant les performances API jusqu’à 60 %. ",
+          "Amélioré l’évolutivité du système et la vélocité des équipes, accélérant la livraison de nouvelles fonctionnalités."
+        ]
+      },
+      {
+        "title": "Junior Full-Stack Developer",
+        "company": "Service NSW",
+        "period": "2021 - 2022",
+        "location": "Sydney, Australie",
+        "highlights": [
+          "Développé et optimisé des API REST pour une plateforme de notifications à fort trafic, garantissant fiabilité et scalabilité.",
+          "Collaboré avec des équipes pluridisciplinaires pour proposer des intégrations fluides entre services backend et interfaces frontend.",
+          "Amélioré les performances et l’accessibilité du frontend, obtenant des temps de chargement plus rapides et de meilleurs scores UX."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Télécharger mon CV complet"
+    }
+  },
+  "projects": {
+    "title": "Projets phares",
+    "description": "Une sélection de projets illustrant mon expertise technique et ma manière de résoudre les problèmes. Chaque projet met en avant un aspect différent du développement full-stack et de l’architecture système.",
+    "featuredBadge": "Projet à la une",
+    "featured": {
+      "title": "Specialty Coffee Log",
+      "description": "Des insights café alimentés par l’IA pour les amateurs de dégustation.",
+      "longDescription": "Une application complète de suivi du café qui utilise le machine learning pour analyser notes de dégustation, méthodes d’infusion et préférences personnelles afin de proposer des recommandations personnalisées.",
+      "image": "https://images.unsplash.com/photo-1661246625079-b6a5c6802c46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBhcHAlMjBtb2JpbGUlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU5NjU0NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "technologies": [
+        "Next.js",
+        "NestJS",
+        "PostgreSQL",
+        "AWS",
+        "AI/ML"
+      ],
+      "liveUrl": "https://coffee-log-demo.com",
+      "githubUrl": "https://github.com/pieter-ohearn/global-grounds",
+      "tabs": {
+        "labels": {
+          "overview": "Aperçu",
+          "architecture": "Architecture",
+          "data": "Flux de données",
+          "ai": "Fonctionnalités IA"
+        },
+        "overview": {
+          "keyFeaturesTitle": "Fonctionnalités clés",
+          "projectMetricsTitle": "Indicateurs du projet",
+          "features": [
+            "Moteur de recommandation intelligent de grains de café",
+            "Suivi de l’optimisation des méthodes d’infusion",
+            "Communauté de notes de dégustation et d’avis",
+            "Analyse personnalisée du profil aromatique",
+            "Intégration avec des torréfacteurs populaires"
+          ],
+          "metrics": [
+            { "label": "Utilisateurs actifs", "value": "12 000+" },
+            { "label": "Avis café", "value": "45 000+" },
+            { "label": "Session moyenne", "value": "8,5 min" },
+            { "label": "Note utilisateur", "value": "4,8/5" }
+          ]
+        },
+        "architecture": {
+          "frontendTitle": "Frontend",
+          "backendTitle": "Backend",
+          "infrastructureTitle": "Infrastructure",
+          "aiTitle": "Stack IA/ML",
+          "frontend": [
+            "Next.js 14 avec App Router",
+            "TypeScript",
+            "Tailwind CSS",
+            "React Query",
+            "Gestion d’état avec Zustand"
+          ],
+          "backend": [
+            "NestJS avec TypeScript",
+            "PostgreSQL via Prisma ORM",
+            "Redis pour le cache",
+            "Authentification JWT",
+            "Limitation de débit & validation"
+          ],
+          "infrastructure": [
+            "AWS ECS pour le déploiement conteneurisé",
+            "RDS pour PostgreSQL",
+            "ElastiCache pour Redis",
+            "CloudFront CDN",
+            "Route 53 DNS"
+          ],
+          "ai": [
+            "OpenAI GPT-4 pour l’analyse des notes de dégustation",
+            "Modèle ML personnalisé pour le profil aromatique",
+            "Vecteurs d’embedding pour la recherche de similarité",
+            "Moteur de recommandations en temps réel"
+          ]
+        },
+        "data": {
+          "intro": "L’application s’appuie sur une architecture microservices avec une communication pilotée par les événements. Les données circulent dans un pipeline robuste conçu pour la scalabilité et le temps réel.",
+          "cards": [
+            {
+              "title": "Collecte de données",
+              "description": "Les contributions utilisateurs et les données externes sont validées puis stockées dans PostgreSQL avec sauvegarde automatique sur S3."
+            },
+            {
+              "title": "Traitement",
+              "description": "Des tâches en arrière-plan analysent les notes grâce au NLP, génèrent des profils aromatiques et mettent à jour les modèles de recommandation en temps réel."
+            },
+            {
+              "title": "Diffusion",
+              "description": "Les insights sont mis en cache dans Redis et servis via des API optimisées avec des réponses inférieures à 100 ms."
+            }
+          ]
+        },
+        "ai": {
+          "intro": "Des fonctionnalités IA avancées alimentent le moteur de recommandation et offrent des insights personnalisés pour aider les utilisateurs à découvrir de nouvelles expériences café.",
+          "sections": [
+            {
+              "title": "Moteur de recommandation",
+              "description": "Combine filtrage collaboratif et recommandations basées sur le contenu pour suggérer grains, méthodes d’infusion et associations de saveurs.",
+              "highlights": [
+                "Similitude cosinus pour les préférences utilisateurs",
+                "Factorisation matricielle pour les données clairsemées",
+                "Mises à jour des modèles en temps réel"
+              ]
+            },
+            {
+              "title": "Traitement du langage naturel",
+              "description": "Analyse les notes rédigées par les utilisateurs pour en extraire profils aromatiques et insights d’infusion à l’aide de modèles linguistiques de pointe.",
+              "highlights": [
+                "Analyse de sentiment des avis",
+                "Reconnaissance d’entités nommées pour les saveurs",
+                "Tagging et catégorisation automatiques"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "otherProjectsTitle": "Autres projets",
+    "highlightHeading": "Réalisations clés :",
+    "otherProjects": [
+      {
+        "title": "API Cost Dashboard",
+        "description": "Monitoring en temps réel et optimisation des coûts pour des API microservices avec analyses prédictives.",
+        "image": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU5NTgyMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "technologies": [
+          "React",
+          "D3.js",
+          "Node.js",
+          "InfluxDB",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/pieter-ohearn/api-cost-dashboard",
+        "highlights": [
+          "Réduction des coûts de 40 %",
+          "Monitoring avec 99,9 % de disponibilité",
+          "Alertes automatisées"
+        ]
+      },
+      {
+        "title": "Minimal Feature Flags",
+        "description": "Service de feature flags léger et orienté développeurs, avec déploiements sans interruption.",
+        "image": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NTk2NTQ0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "technologies": [
+          "Go",
+          "Redis",
+          "React",
+          "WebSockets",
+          "Kubernetes"
+        ],
+        "githubUrl": "https://github.com/pieter-ohearn/minimal-feature-flags",
+        "highlights": [
+          "Temps de réponse <1 ms",
+          "Mises à jour en temps réel",
+          "Collaboration d’équipe"
+        ]
+      }
+    ],
+    "buttons": {
+      "liveDemo": "Démo en direct",
+      "code": "Code",
+      "viewCode": "Voir le code"
+    }
+  },
+  "contact": {
+    "title": "Travaillons ensemble",
+    "description": "Je suis toujours ouvert à de nouvelles opportunités, collaborations ou discussions autour de la technologie et de l’innovation.",
+    "infoHeading": "Prenez contact",
+    "contactMethods": [
+      {
+        "type": "email",
+        "label": "E-mail",
+        "value": "pieter.ohearn@gmail.com",
+        "href": "mailto:pieter.ohearn@gmail.com"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "value": "github.com/Pieter-OHearn",
+        "href": "https://github.com/pieter-ohearn"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/Pieter-OHearn",
+        "href": "https://linkedin.com/in/pieter-ohearn"
+      },
+      {
+        "type": "location",
+        "label": "Localisation",
+        "value": "Amsterdam, Pays-Bas"
+      }
+    ],
+    "openToHeading": "Actuellement ouvert à",
+    "openTo": [
+      {
+        "label": "Postes d’ingénieur full-stack",
+        "status": "available"
+      },
+      {
+        "label": "Projets freelance / conseil",
+        "status": "limited"
+      },
+      {
+        "label": "Collaborations open source",
+        "status": "available"
+      }
+    ],
+    "form": {
+      "title": "Envoyer un message",
+      "nameLabel": "Nom",
+      "emailLabel": "E-mail",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Parlez-moi de votre projet ou opportunité...",
+      "submit": "Envoyer",
+      "subjectTemplate": "Demande de portfolio de {{name}}",
+      "bodyTemplate": "Bonjour Pieter,\n\n{{message}}\n\nDe : {{name}}\nE-mail : {{email}}"
+    }
+  },
+  "footer": {
+    "availability": "Disponible pour des missions",
+    "languageLabel": "Langue",
+    "builtWith": "Créé avec",
+    "and": "et",
+    "coffeePhrase": "une quantité déraisonnable de",
+    "coffee": "café"
+  }
+}

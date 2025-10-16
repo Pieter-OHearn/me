@@ -1,0 +1,375 @@
+{
+  "header": {
+    "logo": "Pieter OHearn",
+    "nav": {
+      "about": "Over mij",
+      "projects": "Projecten",
+      "contact": "Contact"
+    },
+    "ariaLabels": {
+      "email": "E-mail",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "themeToggle": "Thema wisselen",
+      "language": "Selecteer taal"
+    },
+    "socialLinks": [
+      {
+        "type": "email",
+        "href": "mailto:pieter.ohearn@gmail.com"
+      },
+      {
+        "type": "github",
+        "href": "https://github.com/pieter-ohearn"
+      },
+      {
+        "type": "linkedin",
+        "href": "https://linkedin.com/in/pieter-ohearn"
+      }
+    ]
+  },
+  "hero": {
+    "availabilityBadge": "Beschikbaar voor nieuwe mogelijkheden",
+    "name": "Pieter O'Hearn",
+    "title": "Senior Full-Stack Software Engineer",
+    "tagline": "Ik bouw betrouwbare producten van begin tot eind, van schone API's tot verfijnde interfaces. Gepassioneerd over het creëren van schaalbare oplossingen waar gebruikers van houden.",
+    "skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Spring",
+      "AWS",
+      "PostgreSQL",
+      "Docker",
+      "Digitale identiteiten"
+    ]
+  },
+  "about": {
+    "title": "Over mij",
+    "intro": "Met meer dan 5 jaar ervaring specialiseer ik me in het bouwen van schaalbare webapplicaties en het leiden van technische initiatieven die bedrijfsresultaten versterken. Ik heb een passie voor schone code, gebruikerservaring en het begeleiden van de volgende generatie ontwikkelaars.",
+    "skillsTitle": "Technische vaardigheden",
+    "skills": {
+      "Frontend": [
+        "TypeScript",
+        "React",
+        "React Native",
+        "Angular",
+        "Ionic"
+      ],
+      "Backend": [
+        "Java",
+        "Spring Boot",
+        "Node.js",
+        "Kotlin",
+        "Microservices"
+      ],
+      "Database": [
+        "MongoDB",
+        "SQL",
+        "Redis",
+        "DynamoDB"
+      ],
+      "Cloud & DevOps": [
+        "AWS",
+        "CI/CD",
+        "Docker",
+        "OpenTelemetry"
+      ],
+      "Tools & Overig": [
+        "Digitale identiteiten",
+        "Verifieerbare credentials",
+        "OAuth2 / OpenID Connect",
+        "WCAG 2.2 AA"
+      ]
+    },
+    "educationTitle": "Opleidingen & certificeringen",
+    "education": [
+      {
+        "title": "Bachelor of Science, Informatica",
+        "institution": "University of Sydney, Australië",
+        "period": "2016 - 2022"
+      },
+      {
+        "title": "Bachelor of Engineering Honours, Software Engineering",
+        "institution": "University of Sydney, Australië",
+        "period": "2017 - 2022"
+      }
+    ],
+    "experienceTitle": "Professionele ervaring",
+    "experience": [
+      {
+        "title": "Senior Full-Stack Engineer",
+        "company": "Datakeeper",
+        "period": "2024 - heden",
+        "location": "Utrecht, Nederland",
+        "highlights": [
+          "Ontwikkel en onderhoud native app-frameworks, SDK's en backendsystemen voor een digitaal ID-walletplatform.",
+          "Bouw schaalbare, veilige oplossingen die zorgen voor een naadloze integratie tussen Angular-mobiele apps en backendservices.",
+          "Waarborg hoge privacy- en beveiligingsnormen en lever een betrouwbare, gebruiksgerichte identiteitsbeleving."
+        ]
+      },
+      {
+        "title": "Senior Full-Stack Engineer",
+        "company": "Service NSW",
+        "period": "2023 - 2024",
+        "location": "Sydney, Australië",
+        "highlights": [
+          "Leidde de mobiele ontwikkeling van de Service NSW-app, gebruikt door meer dan 4 miljoen gebruikers op iOS en Android.",
+          "Leverde nieuwe functies, waaronder een digitale overheidsinbox en naadloze native transacties.",
+          "Behield hoge beveiligings- en privacy-standaarden en zorgde voor naleving van de WCAG 2.1-toegankelijkheidsrichtlijnen."
+        ]
+      },
+      {
+        "title": "Full-Stack Developer",
+        "company": "Service NSW",
+        "period": "2022 - 2023",
+        "location": "Sydney, Australië",
+        "highlights": [
+          "Ontwierp een gefaseerde migratiestrategie voor een soepele, risicovrije overgang naar microservices.",
+          "Implementeerde observability en monitoring, verlaagde incidenten en verbeterde API-prestaties tot 60%.",
+          "Verhoogde schaalbaarheid en ontwikkelsnelheid, waardoor functies sneller geleverd en gemakkelijker onderhouden werden."
+        ]
+      },
+      {
+        "title": "Junior Full-Stack Developer",
+        "company": "Service NSW",
+        "period": "2021 - 2022",
+        "location": "Sydney, Australië",
+        "highlights": [
+          "Bouwde en optimaliseerde REST-API's voor een druk gebruikt notificatieplatform met hoge betrouwbaarheid en schaalbaarheid.",
+          "Werkte met cross-functionele teams om soepele integraties tussen backendservices en frontendinterfaces te realiseren.",
+          "Verbeterde frontend-prestaties en toegankelijkheid, met snellere laadtijden en betere UX-scores als resultaat."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Volledige cv downloaden"
+    }
+  },
+  "projects": {
+    "title": "Uitgelichte projecten",
+    "description": "Een selectie projecten die mijn technische expertise en probleemoplossend vermogen laten zien. Elk project toont andere aspecten van full-stack development en systeemarchitectuur.",
+    "featuredBadge": "Uitgelicht project",
+    "featured": {
+      "title": "Specialty Coffee Log",
+      "description": "AI-gestuurde smaakinzichten voor koffieliefhebbers.",
+      "longDescription": "Een uitgebreide koffie-trackingapplicatie die machine learning gebruikt om proefnotities, zetmethoden en persoonlijke voorkeuren te analyseren en gepersonaliseerde aanbevelingen te doen.",
+      "image": "https://images.unsplash.com/photo-1661246625079-b6a5c6802c46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBhcHAlMjBtb2JpbGUlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU5NjU0NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "technologies": [
+        "Next.js",
+        "NestJS",
+        "PostgreSQL",
+        "AWS",
+        "AI/ML"
+      ],
+      "liveUrl": "https://coffee-log-demo.com",
+      "githubUrl": "https://github.com/pieter-ohearn/global-grounds",
+      "tabs": {
+        "labels": {
+          "overview": "Overzicht",
+          "architecture": "Architectuur",
+          "data": "Datastroom",
+          "ai": "AI-functionaliteit"
+        },
+        "overview": {
+          "keyFeaturesTitle": "Belangrijkste features",
+          "projectMetricsTitle": "Projectstatistieken",
+          "features": [
+            "Slim aanbevelingssysteem voor koffiebonen",
+            "Optimalisatietracking voor zetmethoden",
+            "Community met proefnotities en reviews",
+            "Persoonlijke smaakprofielanalyse",
+            "Integratie met populaire koffiebranders"
+          ],
+          "metrics": [
+            { "label": "Actieve gebruikers", "value": "12.000+" },
+            { "label": "Koffiereviews", "value": "45.000+" },
+            { "label": "Gem. sessieduur", "value": "8,5 min" },
+            { "label": "Gebruikersscore", "value": "4,8/5" }
+          ]
+        },
+        "architecture": {
+          "frontendTitle": "Frontend",
+          "backendTitle": "Backend",
+          "infrastructureTitle": "Infrastructuur",
+          "aiTitle": "AI/ML-stack",
+          "frontend": [
+            "Next.js 14 met App Router",
+            "TypeScript",
+            "Tailwind CSS",
+            "React Query",
+            "Zustand state management"
+          ],
+          "backend": [
+            "NestJS met TypeScript",
+            "PostgreSQL met Prisma ORM",
+            "Redis voor caching",
+            "JWT-authenticatie",
+            "Rate limiting & validatie"
+          ],
+          "infrastructure": [
+            "AWS ECS voor container deployment",
+            "RDS voor PostgreSQL",
+            "ElastiCache voor Redis",
+            "CloudFront CDN",
+            "Route 53 DNS"
+          ],
+          "ai": [
+            "OpenAI GPT-4 voor analyse van proefnotities",
+            "Eigen ML-model voor smaakprofielen",
+            "Vector-embeddings voor gelijkeniszoektocht",
+            "Realtime aanbevelingsengine"
+          ]
+        },
+        "data": {
+          "intro": "De applicatie gebruikt een microservices-architectuur met event-driven communicatie tussen services. Data stroomt door een robuuste pipeline die is ontworpen voor schaalbaarheid en realtime verwerking.",
+          "cards": [
+            {
+              "title": "Dataverzameling",
+              "description": "Gebruikersinput en externe koffiegegevens worden gevalideerd en opgeslagen in PostgreSQL met automatische back-ups naar S3."
+            },
+            {
+              "title": "Verwerking",
+              "description": "Achtergrondtaken analyseren proefnotities met NLP, genereren smaakprofielen en werken aanbevelingsmodellen realtime bij."
+            },
+            {
+              "title": "Levering",
+              "description": "Verwerkte inzichten worden gecachet in Redis en via geoptimaliseerde API's geleverd met responstijden onder de 100 ms."
+            }
+          ]
+        },
+        "ai": {
+          "intro": "Geavanceerde AI-functionaliteit vormt de kern van de aanbevelingsengine en levert gepersonaliseerde inzichten waarmee gebruikers nieuwe koffie-ervaringen ontdekken.",
+          "sections": [
+            {
+              "title": "Aanbevelingsengine",
+              "description": "Combineert collaborative filtering en contentgebaseerde aanbevelingen om koffiebonen, zetmethoden en smaakcombinaties te adviseren.",
+              "highlights": [
+                "Cosine similarity voor voorkeuren",
+                "Matrixfactorisatie voor schaarse data",
+                "Realtime modelupdates"
+              ]
+            },
+            {
+              "title": "Natural Language Processing",
+              "description": "Analyseert door gebruikers geschreven proefnotities om smaakprofielen en zetinzichten te extraheren met moderne taalmodellen.",
+              "highlights": [
+                "Sentimentanalyse op reviews",
+                "Named entity recognition voor smaken",
+                "Automatische tagging en categorisatie"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "otherProjectsTitle": "Andere projecten",
+    "highlightHeading": "Belangrijkste resultaten:",
+    "otherProjects": [
+      {
+        "title": "API Cost Dashboard",
+        "description": "Realtime monitoring en kostenoptimalisatie voor microservices-API's met voorspellende analyses.",
+        "image": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU5NTgyMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "technologies": [
+          "React",
+          "D3.js",
+          "Node.js",
+          "InfluxDB",
+          "Docker"
+        ],
+        "githubUrl": "https://github.com/pieter-ohearn/api-cost-dashboard",
+        "highlights": [
+          "40% kostenreductie",
+          "99,9% uptime-monitoring",
+          "Geautomatiseerde waarschuwingen"
+        ]
+      },
+      {
+        "title": "Minimal Feature Flags",
+        "description": "Lichtgewicht en ontwikkelaarvriendelijke feature-flagservice met deployments zonder downtime.",
+        "image": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NTk2NTQ0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "technologies": [
+          "Go",
+          "Redis",
+          "React",
+          "WebSockets",
+          "Kubernetes"
+        ],
+        "githubUrl": "https://github.com/pieter-ohearn/minimal-feature-flags",
+        "highlights": [
+          "<1 ms responstijd",
+          "Realtime updates",
+          "Teamcollaboratie"
+        ]
+      }
+    ],
+    "buttons": {
+      "liveDemo": "Live demo",
+      "code": "Code",
+      "viewCode": "Bekijk code"
+    }
+  },
+  "contact": {
+    "title": "Laten we samenwerken",
+    "description": "Ik sta altijd open voor nieuwe kansen, samenwerkingen of een gesprek over technologie en innovatie.",
+    "infoHeading": "Neem contact op",
+    "contactMethods": [
+      {
+        "type": "email",
+        "label": "E-mail",
+        "value": "pieter.ohearn@gmail.com",
+        "href": "mailto:pieter.ohearn@gmail.com"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "value": "github.com/Pieter-OHearn",
+        "href": "https://github.com/pieter-ohearn"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/Pieter-OHearn",
+        "href": "https://linkedin.com/in/pieter-ohearn"
+      },
+      {
+        "type": "location",
+        "label": "Locatie",
+        "value": "Amsterdam, Nederland"
+      }
+    ],
+    "openToHeading": "Momenteel beschikbaar voor",
+    "openTo": [
+      {
+        "label": "Full-stack engineerrollen",
+        "status": "available"
+      },
+      {
+        "label": "Freelance- en consultancyprojecten",
+        "status": "limited"
+      },
+      {
+        "label": "Open-source samenwerkingen",
+        "status": "available"
+      }
+    ],
+    "form": {
+      "title": "Stuur een bericht",
+      "nameLabel": "Naam",
+      "emailLabel": "E-mailadres",
+      "messageLabel": "Bericht",
+      "messagePlaceholder": "Vertel me over je project of kans...",
+      "submit": "Bericht verzenden",
+      "subjectTemplate": "Portfoliovraag van {{name}}",
+      "bodyTemplate": "Hoi Pieter,\n\n{{message}}\n\nVan: {{name}}\nE-mail: {{email}}"
+    }
+  },
+  "footer": {
+    "availability": "Beschikbaar voor werk",
+    "languageLabel": "Taal",
+    "builtWith": "Gemaakt met",
+    "and": "en",
+    "coffeePhrase": "een onverantwoordelijke hoeveelheid",
+    "coffee": "koffie"
+  }
+}

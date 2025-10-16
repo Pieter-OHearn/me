@@ -1,8 +1,11 @@
 import { ArrowDown, Download, Github } from 'lucide-react'
 import { Button } from './ui/button'
 import { Badge } from './ui/badge'
+import { useTranslations } from '@/i18n/I18nProvider'
 
 export function Hero() {
+  const { hero } = useTranslations()
+
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -12,17 +15,16 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
           <Badge variant="outline" className="bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950 dark:text-teal-300 dark:border-teal-800">
-            Available for new opportunities
+            {hero.availabilityBadge}
           </Badge>
           <h1 className="text-5xl md:text-7xl font-medium tracking-tight">
-            Pieter O'Hearn
+            {hero.name}
           </h1>
           <h2 className="text-xl md:text-2xl text-muted-foreground">
-            Senior Full-Stack Software Engineer
+            {hero.title}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I build reliable products end-to-end, from clean APIs to crisp UIs. 
-            Passionate about creating scalable solutions that users love.
+            {hero.tagline}
           </p>
         </div>
 
@@ -45,7 +47,7 @@ export function Hero() {
 
         <div className="pt-8">
           <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
-            {['TypeScript', 'React', 'Node.js', 'Spring', 'AWS', 'PostgreSQL', 'Docker', 'Digital Identity'].map((tech) => (
+            {hero.skills.map((tech) => (
               <Badge key={tech} variant="secondary" className="text-sm">
                 {tech}
               </Badge>

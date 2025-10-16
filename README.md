@@ -7,6 +7,7 @@ A polished, single-page portfolio that introduces my work as a senior full-stack
 - Timeline-style About section covering experience, education, and a downloadable CV
 - Featured projects layout with rich architecture breakdowns (toggleable in `App.tsx`)
 - Contact panel with social cards, location, and a lightweight client-side inquiry form
+- Language-aware copy powered by JSON dictionaries (en, nl, de, fr, es) with browser locale detection
 - Dark/light theme toggle with preference persisted via localStorage
 - Tailwind CSS 4 design tokens and shadcn-inspired component library for consistent styling
 
@@ -26,13 +27,14 @@ A polished, single-page portfolio that introduces my work as a senior full-stack
 ## Project Structure
 - `src/App.tsx` – top-level layout with ThemeProvider and section orchestration
 - `src/components/` – modular sections (Hero, About, Projects, Contact, Footer) and UI primitives
+- `src/i18n/locales/` – JSON translation dictionaries (currently English-only) consumed via a lightweight i18n provider
 - `public/Pieter-OHearn-CV.pdf` – downloadable CV served as a static asset
 - `src/index.css` – Tailwind CSS layer definitions and design tokens
 - `vite.config.ts` – alias map for UI dependencies and dev server configuration
 
 ## Customising Content
-- Update hero copy, badges, and skill chips in `src/components/hero.tsx`
-- Adjust experience highlights, education, and skill taxonomy in `src/components/about.tsx`
+- Update copy by editing the locale files in `src/i18n/locales/` (English, Dutch, German, French, Spanish); components read all user-facing text from these dictionaries
+- Adjust experience highlights, education, and skill taxonomy centrally via the locale files to keep translations in sync
 - Populate real project data or hide the section by toggling `<Projects />` in `src/App.tsx`
 - Replace the CV by dropping a new PDF in `public/` and updating download links if needed
 - Wire the contact form to a service (e.g. Formspree, Netlify Forms) or a serverless function when ready
