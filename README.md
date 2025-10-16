@@ -39,6 +39,6 @@ A polished, single-page portfolio that introduces my work as a senior full-stack
 
 ## Deployment
 - GitHub Pages: `pnpm run deploy` builds and publishes the `build/` folder to the `gh-pages` branch using the `gh-pages` CLI.
-- Ensure the repo name matches the Vite base path (`/me/` in `vite.config.ts`). Update that value if you rename the repository.
+- The app is configured to serve from the root path (`/`); no additional base path configuration is required.
 - The app remains fully static and can also be hosted on any other static provider that serves the `build/` directory (Vercel, Netlify, S3 + CloudFront, etc.).
 - A GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically installs dependencies, builds, and deploys the site to GitHub Pages whenever `main` changes.
