@@ -114,9 +114,9 @@
         "period": "2023 - 2024",
         "location": "Sydney, Australia",
         "highlights": [
-          "Led mobile development for the Service NSW app, serving 4M+ users across iOS and Android.",
-          "Delivered new features, including a digital government inbox and seamless native transaction experiences.",
-          "Maintained high security and privacy standards, ensuring compliance with WCAG 2.1 accessibility guidelines."
+          "Specialised in React Native development for Android and iOS, maintaining an app used by over five million citizens.",
+          "Built a shared component library to improve accessibility (WCAG 2.2 AA) and design consistency across teams.",
+          "Delivered key citizen-facing features, including a secure notifications inbox and scalable grants service."
         ]
       },
       {
@@ -125,9 +125,9 @@
         "period": "2022 - 2023",
         "location": "Sydney, Australia",
         "highlights": [
-          "Designed a phased migration strategy, enabling smooth, low-risk transition to microservices.",
-          "Implemented observability and monitoring, reducing incidents and improving API performance by up to 60%.",
-          "Enhanced system scalability and developer velocity, supporting faster feature delivery and easier maintenance."
+          "Re-architected a legacy monolith into scalable microservices with asynchronous queues and auto-scaling for high availability.",
+          "Improved reliability and performance through observability tooling, reducing incidents and cutting API latency by up to 60%.",
+          "Designed and validated a new database schema and introduced a BFF layer for faster, data-driven frontend experiences."
         ]
       },
       {
@@ -182,10 +182,22 @@
             "Integration with popular coffee roasters"
           ],
           "metrics": [
-            { "label": "Active Users", "value": "12,000+" },
-            { "label": "Coffee Reviews", "value": "45,000+" },
-            { "label": "Avg. Session", "value": "8.5 min" },
-            { "label": "User Rating", "value": "4.8/5" }
+            {
+              "label": "Active Users",
+              "value": "12,000+"
+            },
+            {
+              "label": "Coffee Reviews",
+              "value": "45,000+"
+            },
+            {
+              "label": "Avg. Session",
+              "value": "8.5 min"
+            },
+            {
+              "label": "User Rating",
+              "value": "4.8/5"
+            }
           ]
         },
         "architecture": {
@@ -267,39 +279,21 @@
     "highlightHeading": "Key Achievements:",
     "otherProjects": [
       {
-        "title": "API Cost Dashboard",
-        "description": "Real-time monitoring and cost optimization for microservices APIs with predictive analytics.",
-        "image": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU5NTgyMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "image": "computer-screen-code.jpg",
+        "icon": "bot",
+        "title": "CodeKoala 🐨",
+        "description": "Your friendly, local-first LLM-powered code reviewer that analyzes Git changes and provides AI-driven feedback on code quality and best practices.",
         "technologies": [
-          "React",
-          "D3.js",
-          "Node.js",
-          "InfluxDB",
-          "Docker"
+          "Python",
+          "AI",
+          "Ollama",
+          "Git"
         ],
-        "githubUrl": "https://github.com/pieter-ohearn/api-cost-dashboard",
+        "githubUrl": "https://github.com/pieter-ohearn/codekoala",
         "highlights": [
-          "40% cost reduction",
-          "99.9% uptime monitoring",
-          "Automated alerts"
-        ]
-      },
-      {
-        "title": "Minimal Feature Flags",
-        "description": "Lightweight, developer-friendly feature flag service with zero-downtime deployments.",
-        "image": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NTk2NTQ0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "technologies": [
-          "Go",
-          "Redis",
-          "React",
-          "WebSockets",
-          "Kubernetes"
-        ],
-        "githubUrl": "https://github.com/pieter-ohearn/minimal-feature-flags",
-        "highlights": [
-          "<1ms response time",
-          "Real-time updates",
-          "Team collaboration"
+          "Runs local AI to analyse and review git diff changes",
+          "Generates structured, context-aware commit messages",
+          "Designed for speed and efficiency with small local models"
         ]
       }
     ],

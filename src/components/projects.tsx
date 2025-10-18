@@ -1,15 +1,36 @@
-import { ExternalLink, Github, Zap, BarChart3, Flag } from 'lucide-react'
-import { Card, CardContent, CardHeader } from './ui/card'
+import type { ComponentType } from 'react'
+import { useTranslations } from '@/i18n/I18nProvider'
+import {
+  BadgeCheck,
+  Bot,
+  Coffee,
+  Flag,
+  Github,
+  Sparkles,
+  Terminal,
+} from 'lucide-react'
 import { Badge } from './ui/badge'
 import { Button } from './ui/button'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
+import { Card, CardContent } from './ui/card'
 import { ImageWithFallback } from './ui/ImageWithFallback'
-import { useTranslations } from '@/i18n/I18nProvider'
+import computerScreenCode from '@/assets/computer-screen-code.jpg'
 
 export function Projects() {
   const { projects } = useTranslations()
   const { featured } = projects
 
+  const iconComponents: Record<string, ComponentType<{ className?: string }>> = {
+    coffee: Coffee,
+    flag: Flag,
+    sparkles: Sparkles,
+    terminal: Terminal,
+    bot: Bot,
+    'badge-check': BadgeCheck,
+  }
+
+  const projectImages: Record<string, string> = {
+    'computer-screen-code.jpg': computerScreenCode,
+  }
   return (
     <section id="projects" className="py-20 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
@@ -24,7 +45,7 @@ export function Projects() {
 
         {/* Featured Project */}
 
-        <Card className="mb-16 overflow-hidden border-2 border-teal-200 dark:border-teal-800">
+        {/* <Card className="mb-16 overflow-hidden border-2 border-teal-200 dark:border-teal-800">
           <div className="grid md:grid-cols-2 gap-0">
             <div className="relative aspect-[4/3] md:aspect-auto">
               <ImageWithFallback
@@ -84,7 +105,6 @@ export function Projects() {
             </CardContent>
           </div>
 
-          {/* Project Details Tabs */}
           <div className="border-t">
             <Tabs defaultValue="overview" className="p-8">
               <TabsList className="grid w-full grid-cols-4">
@@ -238,76 +258,78 @@ export function Projects() {
               </TabsContent>
             </Tabs>
           </div>
-        </Card>
+        </Card> */}
 
         {/* Other Projects */}
         <div>
-          <h3 className="text-2xl font-medium mb-8">
+          {/* <h3 className="text-2xl font-medium mb-8">
             {projects.otherProjectsTitle}
-          </h3>
+          </h3> */}
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.otherProjects.map((project, index) => (
-              <Card
-                key={project.title}
-                className="overflow-hidden group hover:shadow-lg transition-shadow"
-              >
-                <div className="aspect-[16/10] relative overflow-hidden">
-                  <ImageWithFallback
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h4 className="font-medium mb-2 flex items-center gap-2">
-                      {index === 0 ? (
-                        <BarChart3 className="h-5 w-5 text-teal-600 dark:text-teal-400" />
-                      ) : (
-                        <Flag className="h-5 w-5 text-teal-600 dark:text-teal-400" />
-                      )}
-                      {project.title}
-                    </h4>
-                    <p className="text-muted-foreground text-sm mb-3">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs">
-                          {tech}
-                        </Badge>
+            {projects.otherProjects.map((project) => {
+              const Icon = iconComponents[project.icon ?? 'badge-check'] ?? BadgeCheck
+              const imageSrc = project.image
+                ? projectImages[project.image] ?? project.image
+                : computerScreenCode
+              return (
+                <Card
+                  key={project.title}
+                  className="overflow-hidden group hover:shadow-lg transition-shadow"
+                >
+                  <div className="aspect-[16/10] relative overflow-hidden">
+                    <ImageWithFallback
+                      src={imageSrc}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <CardContent className="p-6 space-y-4">
+                    <div>
+                      <h4 className="font-medium mb-2 flex items-center gap-2">
+                        <Icon className="h-5 w-5 text-teal-600 dark:text-teal-400" />
+                        {project.title}
+                      </h4>
+                      <p className="text-muted-foreground text-sm mb-3">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <div className="text-sm font-medium">
+                        {projects.highlightHeading}
+                      </div>
+                      {project.highlights.map((highlight, idx) => (
+                        <div
+                          key={idx}
+                          className="text-sm text-muted-foreground flex items-center gap-2"
+                        >
+                          <span className="w-1 h-1 bg-teal-600 dark:bg-teal-400 rounded-full"></span>
+                          {highlight}
+                        </div>
                       ))}
                     </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <div className="text-sm font-medium">
-                      {projects.highlightHeading}
-                    </div>
-                    {project.highlights.map((highlight, idx) => (
-                      <div
-                        key={idx}
-                        className="text-sm text-muted-foreground flex items-center gap-2"
+                    <Button variant="outline" size="sm" asChild className="w-full">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <span className="w-1 h-1 bg-teal-600 dark:bg-teal-400 rounded-full"></span>
-                        {highlight}
-                      </div>
-                    ))}
-                  </div>
-
-                  <Button variant="outline" size="sm" asChild className="w-full">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      {projects.buttons.viewCode}
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+                        <Github className="mr-2 h-4 w-4" />
+                        {projects.buttons.viewCode}
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ export function Hero() {
           </p>
         </div>
 
-        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
             onClick={scrollToProjects}
@@ -43,7 +43,7 @@ export function Hero() {
               Download CV
             </a>
           </Button>
-        </div> */}
+        </div>
 
         <div className="pt-8">
           <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">

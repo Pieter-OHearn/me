@@ -182,10 +182,22 @@
             "Integración con tostadores populares"
           ],
           "metrics": [
-            { "label": "Usuarios activos", "value": "12.000+" },
-            { "label": "Reseñas de café", "value": "45.000+" },
-            { "label": "Sesión promedio", "value": "8,5 min" },
-            { "label": "Valoración de usuarios", "value": "4,8/5" }
+            {
+              "label": "Usuarios activos",
+              "value": "12.000+"
+            },
+            {
+              "label": "Reseñas de café",
+              "value": "45.000+"
+            },
+            {
+              "label": "Sesión promedio",
+              "value": "8,5 min"
+            },
+            {
+              "label": "Valoración de usuarios",
+              "value": "4,8/5"
+            }
           ]
         },
         "architecture": {
@@ -267,39 +279,21 @@
     "highlightHeading": "Logros destacados:",
     "otherProjects": [
       {
-        "title": "API Cost Dashboard",
-        "description": "Monitorización en tiempo real y optimización de costos para APIs de microservicios con analítica predictiva.",
-        "image": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU5NTgyMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "image": "computer-screen-code.jpg",
+        "icon": "bot",
+        "title": "CodeKoala 🐨",
+        "description": "Tu revisor de código local-first basado en LLM que analiza cambios de Git y ofrece comentarios impulsados por IA sobre la calidad del código y las buenas prácticas.",
         "technologies": [
-          "React",
-          "D3.js",
-          "Node.js",
-          "InfluxDB",
-          "Docker"
+          "Python",
+          "AI",
+          "Ollama",
+          "Git"
         ],
-        "githubUrl": "https://github.com/pieter-ohearn/api-cost-dashboard",
+        "githubUrl": "https://github.com/pieter-ohearn/codekoala",
         "highlights": [
-          "Reducción de costos del 40 %",
-          "Monitorización con 99,9 % de disponibilidad",
-          "Alertas automatizadas"
-        ]
-      },
-      {
-        "title": "Minimal Feature Flags",
-        "description": "Servicio de feature flags ligero y pensado para desarrolladores, con despliegues sin downtime.",
-        "image": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBzZXR1cHxlbnwxfHx8fDE3NTk2NTQ0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "technologies": [
-          "Go",
-          "Redis",
-          "React",
-          "WebSockets",
-          "Kubernetes"
-        ],
-        "githubUrl": "https://github.com/pieter-ohearn/minimal-feature-flags",
-        "highlights": [
-          "Tiempo de respuesta <1 ms",
-          "Actualizaciones en tiempo real",
-          "Colaboración en equipo"
+          "Ejecuta IA local para analizar y revisar los cambios de git diff",
+          "Genera mensajes de commit estructurados y con conocimiento del contexto",
+          "Diseñado para velocidad y eficiencia con modelos locales pequeños"
         ]
       }
     ],
