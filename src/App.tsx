@@ -10,7 +10,7 @@ import { I18nProvider } from './i18n/I18nProvider'
 export default function App() {
   return (
     <I18nProvider>
-      <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
+      <ThemeProvider defaultTheme="system" storageKey="portfolio-theme">
         <div className="min-h-screen bg-background">
           <Header />
           <main>
