@@ -1,0 +1,348 @@
+\documentclass[10pt, a4paper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 150, 137} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Pieter OHearn's CV},
+    pdfauthor={Pieter OHearn},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{etoolbox} % for patchcmd
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro} 
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Pieter OHearn - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{
+    % avoid page braking right after the section title
+    \needspace{4\baselineskip}
+    % make the font size of the section title large and color it with the primary color
+    \Large\color{primaryColor}
+}{
+}{
+}{
+    % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
+    % from the end of the title to the end of the body
+    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+}[] % section title formatting
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1 cm, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\MonthName}[1]{%
+    \ifcase#1%
+        \or January%
+        \or February%
+        \or March%
+        \or April%
+        \or May%
+        \or June%
+        \or July%
+        \or August%
+        \or September%
+        \or October%
+        \or November%
+        \or December%
+    \else Unknown%
+    \fi
+}
+
+\newcommand{\LastUpdatedText}{Last updated in \MonthName{\month} \the\year}
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{\LastUpdatedText}\hspace{\widthof{\LastUpdatedText}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \placelastupdatedtext
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+        \textbf{Pieter OHearn}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Amsterdam, Netherlands}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:pieter.ohearn@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}pieter.ohearn@gmail.com}}%
+        \kern 0.25 cm%
+        \AND%
+        % \kern 0.25 cm%
+        % \mbox{\hrefWithoutArrow{tel:+31612345678}{{\footnotesize\faPhone*}\hspace*{0.13cm}+31 06 12 34 56 78}}%
+        % \kern 0.25 cm%
+        % \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://www.pieterohearn.com/}{{\footnotesize\faLink}\hspace*{0.13cm}pieterohearn.com}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/pieter-ohearn}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}linkedin.com/in/Pieter-OHearn}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://github.com/pieter-ohearn}{{\footnotesize\faGithub}\hspace*{0.13cm}github.com/Pieter-OHearn}}%
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+    \section{Summary}
+
+        \begin{onecolentry}
+            Senior Full-Stack Engineer specialising in identity and digital services platforms. Experienced in designing and scaling cross-platform solutions across Java/Spring, Node.js, and React Native ecosystems. Proven record of leading digital transformation initiatives in both public and private sectors, combining deep technical expertise with user-centric design. Passionate about observability, security-by-design, and clean architecture to deliver reliable, privacy-preserving digital products.
+        \end{onecolentry}
+    
+    \section{Experience}
+
+        \begin{twocolentry}{
+            Utrecht, Netherlands
+        
+            Sep 2024 – Present
+        }
+            \textbf{Datakeeper}, Senior Full-Stack Engineer
+            \begin{highlights}
+                \item Implemented end-to-end observability with OpenTelemetry across the Spring Boot and Node.js back-ends for unified tracing and metrics.
+                \item Re-architected the web scraping service for issuing verifiable credentials, improving resilience, privacy, and adaptability to external systems.
+                \item Defining scalable back-end architectures in Spring and Node.js through close collaboration with product and compliance teams.
+                \item Improved developer experience through clean architecture, modularisation, and automated testing.
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Sydney, Australia
+
+        Dec 2003 – Sep 2024
+        }
+            \textbf{Service NSW}, Senior Full-Stack Engineer | Mobile App Team
+            \begin{highlights}
+                \item Specialised in React Native mobile development across Android and iOS, maintaining and improving an app serving five million active users.
+                \item Developed a component library, ensuring accessibility (WCAG 2.2 AA standard) and design consistency across all product teams, in close collaboration with UX and design.
+                \item Implemented new citizen-facing features, such as a secure digital notification inbox and native transaction experiences, improving engagement and reducing friction.
+                \item Designed and built a scalable Grants Service, integrating back-end APIs and mobile UI to help citizens apply for and track grants during crisis periods, increasing accessibility and reliability under high load.
+                \item Partnered with designers, policy specialists, and engineers in a fast-moving, product-driven environment focused on impact, not process.
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Sydney, Australia
+
+        Mar 2022 – Dec 2023
+        }
+            \textbf{Service NSW}, Full-Stack Engineer | Digital Notifications Platform
+            \begin{highlights}
+                \item Re-architected a legacy monolith into microservices, introducing asynchronous queues and auto-scaling to ensure high availability during surges in message volume.
+                \item Applied observability and performance monitoring tools, allowing the team to cut production incidents and improving API latency by 40–60%.
+                \item Led a proof-of-concept database redesign, producing detailed ERDs and validating schema improvements through rigorous testing.
+                \item Adopted the Backend-for-Frontend (BFF) pattern to deliver dynamically populated, data-driven front-end views that optimised the citizen experience.
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Sydney, Australia
+
+        Jun 2021 – Mar 2022
+        }
+            \textbf{Service NSW}, Junior Full-Stack Engineer | Digital Notifications Platform
+            \begin{highlights}
+                \item Developed and rigorously tested back-end APIs for a high-traffic notifications platform, facilitating communication between state agencies and over 8 million NSW citizens.
+                \item Supported the design and deployment of front-end pages, focusing on improving user experience and accessibility.
+            \end{highlights}
+        \end{twocolentry}
+    
+    \section{Education}
+
+        \begin{twocolentry}{
+            Feb 2016 – Jul 2021
+        }
+            \textbf{The University of Sydney}, Computer Science
+            \begin{highlights}
+                \item Acquired a solid foundation in computer science theory, including computational complexity, operating systems, and computer architecture, providing a deep understanding of how software interacts with hardware.
+                \item Developed practical skills in programming languages (e.g., Java, Python, C), databases, and web technologies, enabling me to build robust and versatile applications across various platforms.
+            \end{highlights}
+        \end{twocolentry}
+
+        \begin{twocolentry}{
+            Feb 2017 – Jul 2022
+        }
+            \textbf{The University of Sydney}, Software Engineering Honours
+            \begin{highlights}
+                \item Gained comprehensive knowledge in software engineering principles, including software development lifecycle, systems engineering, and project management, equipping me with the skills to lead and manage complex software projects.
+                \item Specialised in advanced topics such as algorithms, data structures, and software design patterns, enhancing my ability to develop efficient, maintainable, and scalable software solutions.
+            \end{highlights}
+        \end{twocolentry}
+
+    
+    \section{Projects}
+        
+        \begin{twocolentry}{
+            \href{https://github.com/pieter-ohearn/codekoala}{github.com/codekoala}
+        }
+            \textbf{AI Code Reviewing CLI Tool}
+            \begin{highlights}
+                \item Runs on-device AI to review git diffs, produce structured commit messages, and suggest code improvements.
+                \item Tools Used: Python, CLI, Ollama (local LLM)
+            \end{highlights}
+        \end{twocolentry}
+
+    
+    \section{Technical Skills}
+
+        \begin{itemize}[leftmargin=*, itemsep=0pt]
+          \item Java; Kotlin; Spring Boot; Node.js; TypeScript; React; React Native; Angular; Python
+          \item AWS; Docker; Terraform; CI/CD; Git;
+          \item OpenTelemetry; Observability; Tracing; Sentry
+          \item PostgreSQL; MongoDB; DynamoDB; Redis
+          \item TDD; Clean Architecture; Agile/Scrum; Microservices; REST APIs
+        \end{itemize}
+    
+
+\end{document}

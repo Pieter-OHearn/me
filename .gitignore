@@ -24,3 +24,7 @@ yarn-error.log*
 
 # pnpm store (optional if using local store)
 .pnpm-store/
+
+# CV files
+CV/*
+!CV/Pieter-OHearn-CV.tex

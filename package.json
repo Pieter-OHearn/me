@@ -49,6 +49,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "build:cv": "pdflatex -interaction=nonstopmode -output-directory CV CV/Pieter-OHearn-CV.tex && mv CV/Pieter-OHearn-CV.pdf public/Pieter-OHearn-CV.pdf",
         "predeploy": "pnpm run build",
         "deploy": "gh-pages -d build"
     },
