@@ -5,7 +5,7 @@ export function Logo({ className = "" }: { className?: string }) {
       viewBox="0 0 120 120"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Pieter O'Hearn Logo"
+      aria-label="Pieter OHearn Logo"
     >
       {/* Outer circle with gradient border */}
       <circle

@@ -1,4 +1,4 @@
-# Pieter O'Hearn - Portfolio
+# Pieter OHearn - Portfolio
 
 A polished, single-page portfolio that introduces my work as a senior full-stack engineer. It highlights experience, core skills, and ways to get in touch, all wrapped in a responsive, theme-aware UI built with modern React tooling.
 
