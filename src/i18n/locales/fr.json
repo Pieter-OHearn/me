@@ -38,6 +38,8 @@
       "React",
       "Node.js",
       "Spring",
+      "Kotlin",
+      "Java",
       "AWS",
       "PostgreSQL",
       "Docker",
@@ -46,7 +48,7 @@
   },
   "about": {
     "title": "À propos de moi",
-    "intro": "Fort de plus de 5 ans d'expérience, je me spécialise dans la création d'applications web évolutives et dans la conduite d'initiatives techniques qui stimulent la croissance. J’ai le goût du code propre, de l’expérience utilisateur et du mentorat de la prochaine génération de développeurs.",
+    "intro": "Fort de plus de 4 ans d'expérience, je me spécialise dans la création d'applications web évolutives et dans la conduite d'initiatives techniques qui stimulent la croissance. J’ai le goût du code propre, de l’expérience utilisateur et du mentorat de la prochaine génération de développeurs.",
     "skillsTitle": "Compétences techniques",
     "skills": {
       "Frontend": [
@@ -154,7 +156,7 @@
       "title": "Specialty Coffee Log",
       "description": "Des insights café alimentés par l’IA pour les amateurs de dégustation.",
       "longDescription": "Une application complète de suivi du café qui utilise le machine learning pour analyser notes de dégustation, méthodes d’infusion et préférences personnelles afin de proposer des recommandations personnalisées.",
-      "image": "https://images.unsplash.com/photo-1661246625079-b6a5c6802c46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBhcHAlMjBtb2JpbGUlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU5NjU0NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      "image": "computer-screen-code.jpg",
       "technologies": [
         "Next.js",
         "NestJS",

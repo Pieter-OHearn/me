@@ -33,12 +33,12 @@ export function Header() {
             >
               {header.nav.about}
             </button>
-            {/* <button
+            <button
               onClick={() => scrollToSection('projects')}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               {header.nav.projects}
-            </button> */}
+            </button>
             <button
               onClick={() => scrollToSection('contact')}
               className="text-muted-foreground hover:text-foreground transition-colors"
