@@ -338,11 +338,11 @@
     "openTo": [
       {
         "label": "Roles de ingeniero full-stack",
-        "status": "available"
+        "status": "limited"
       },
       {
         "label": "Proyectos freelance / consultoría",
-        "status": "limited"
+        "status": "available"
       },
       {
         "label": "Colaboraciones open source",

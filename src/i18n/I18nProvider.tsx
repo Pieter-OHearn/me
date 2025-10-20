@@ -63,6 +63,11 @@ export function I18nProvider({
     }
   }, [defaultLocale, locale])
 
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    document.documentElement.lang = locale
+  }, [locale])
+
   const value = useMemo<I18nContextValue>(
     () => ({
       locale,
