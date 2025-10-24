@@ -14,18 +14,4 @@
             1.0
         </priority>
     </url>
-    <url>
-        <loc>
-            https://www.pieterohearn.com/Pieter-OHearn-CV.pdf
-        </loc>
-        <lastmod>
-            2025-10-21T20:37:29.715Z
-        </lastmod>
-        <changefreq>
-            monthly
-        </changefreq>
-        <priority>
-            0.4
-        </priority>
-    </url>
 </urlset>
